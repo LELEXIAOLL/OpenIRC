@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "openircclient",
+  "version": "${version}",
+
+  "name": "OpenIRCClient",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "All-Rights-Reserved",
+  "icon": "assets/openircclient/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+
+
+      "com.openircclient.Openircclient"
+    ],
+    "client": [
+      "com.openircclient.Openircclient"
+    ]
+  },
+
+  "mixins": [
+    "openircclient.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
